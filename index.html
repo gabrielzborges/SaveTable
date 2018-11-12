@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/cadastro.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700,500">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<div id="container">
+		<h1>Cadastre-se! 
+			<button id="cadastro" type="button"><i class="fa fa-plus"></i></button>
+		</h1>
+		<form>
+			<input id="nome" type="text" placeholder="nome">
+
+			<input id="endereco" type="text" placeholder="endereco">
+
+			<input id="telefone" type="tel" placeholder="(XX) XXXX-XXXX">
+		</form>
+	</div>	
+
+	<div id="divTableHead">
+		<table>
+			<thead class="th">
+				<tr>
+					<th>Nome</th>
+					<th>Endereco</th>
+					<th>Telefone</th>
+					<th><input type="checkbox" id="checkAll"><button id="remove" type="button"><i class="fa fa-trash"></i></button></th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div id="divTableBody">
+		<table>
+			<tbody id="tb">
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="assets/js/cadastro.js"></script>
+</body>
+</html>
